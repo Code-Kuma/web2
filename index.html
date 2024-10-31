@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página de Registro/Login</title>
+</head>
+<body>
+    <div class="container" id="app">
+        <h1 id="title">Registro e Inicio de Sesión</h1>
+        <div id="form-container">
+            <form id="login-form" class="form">
+                <input type="text" id="username" placeholder="Nombre de usuario" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <form id="register-form" class="form">
+                <input type="text" id="new-username" placeholder="Nuevo nombre de usuario" required>
+                <button type="submit">Registrar</button>
+            </form>
+            <div id="welcome-message" class="hidden"></div>
+            <div id="admin-panel" class="hidden">
+                <h2>Panel del Administrador</h2>
+                <div id="connected-users"></div>
+            </div>
+        </div>
+        <div id="chat-container" class="hidden">
+            <h2>Chat</h2>
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+            <button id="send-message">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
